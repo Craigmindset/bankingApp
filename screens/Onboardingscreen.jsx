@@ -5,9 +5,11 @@ import { useNavigation } from '@react-navigation/native';
 
 const Onboardingscreen = () => {
   const navigation = useNavigation();
+
   return (
     <Onboarding
     onSkip={() => navigation.navigate("Home")}
+    onDone={() => navigation.replace("Home")}
   pages={[
     {
       backgroundColor: '#fff',
